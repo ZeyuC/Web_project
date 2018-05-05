@@ -1,0 +1,135 @@
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 98.3%;
+}
+
+.header {
+    padding: 0px 16px;
+    background: #555;
+    color: #f1f1f1;
+    width: 98.3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Nomdusite {
+    background-image: url("top_img.jpg");
+    padding: 30px;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+}
+
+.chapitres{
+    list-style-type:none;
+    padding:0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+}
+
+.chapitres li{
+    width: 100%;
+    color: white;
+    background-color: #666666;
+    margin: 0 auto;
+    padding:8px 16px;
+    border-bottom:1px solid #cacaca
+}
+.chapitres li:last-child{
+    border-bottom:none
+}
+
+.chapitres li:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar {
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    width: 95%;
+    padding: 8px;
+    margin: auto;
+}
+
+#navbar .lien {
+    display: inline;
+    color: #f2f2f2;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: auto;
+}
+
+
+#navbar .lien:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar img {
+    float: right;
+    display: inline;
+    height: 30px;
+    width: 30px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+body {
+    font-size: 1.2em;
+    font-family: Arial, serif;
+    text-align: center;
+    height: 100%;
+    background-color: #cacaca;
+    margin: 0;
+}
+
+hr {
+    color: black;
+    width: 30%;
+}
+
+.container {
+    min-height: 81%;
+    padding: 16px;
+}
+
+.column p {
+    width: 80%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #757575;
+}
+
+.sticky + .container {
+    padding-top: 60px;
+}
+
+.footer {
+    background-color: #666666;
+}
+
+.clearfix { clear: both; }
+
+.btn1{
+    display: inline-block;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    color: red;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
