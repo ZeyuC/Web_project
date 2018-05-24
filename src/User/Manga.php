@@ -38,7 +38,7 @@ class Manga
     /**
      * @var int
      */
-    private $nb_note;
+    private $nb_notes;
 
     /**
      * @var int
@@ -54,6 +54,11 @@ class Manga
      * @var \DateTimeInterface
      */
     private $fin ;
+
+    /**
+     * @var \string
+     */
+    private $description;
 
     /*********** Getters and setters ************/
 
@@ -142,15 +147,15 @@ class Manga
      */
     public function getNbNote()
     {
-        return $this->nb_note;
+        return $this->nb_notes;
     }
 
     /**
-     * @param int $nb_note
+     * @param int $nb_notes
      */
-    public function setNbNote($nb_note)
+    public function setNbNote($nb_notes)
     {
-        $this->nb_note = $nb_note;
+        $this->nb_notes = $nb_notes;
     }
 
     /**
@@ -199,6 +204,22 @@ class Manga
     public function setFin($fin)
     {
         $this->fin = $fin;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
     }
 
 }

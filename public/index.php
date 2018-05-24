@@ -1,23 +1,9 @@
 <?php
-include("Vue.php");
-include("Modele.php");
-  entete() ;
-  bandeau();
-  contenu() ;
-  pied()?>
-
-<script>
-    window.onscroll = function() {myFunction()};
-
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-    }
-</script>
-
+/**
+ * Created by PhpStorm.
+ * User: clement
+ * Date: 17/05/18
+ * Time: 18:18
+ */
+require '../vendor/autoload.php';
+header('Location: php/index.php');
